@@ -1,0 +1,211 @@
+body{
+	font-size: 10px;
+	font-family: "Gill Sans", sans-serif;
+	padding:0px;
+	margin:0px;
+	background-size: cover;
+  background: -webkit-linear-gradient(#5fa2bf, #d0e3ea); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#5fa2bf, #d0e3ea); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#5fa2bf, #d0e3ea); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#5fa2bf, #d0e3ea); /* Standard syntax */
+	overflow-x: hidden !important;
+}
+
+.container{
+	max-width: 140.0em;
+	padding-right: 8%;
+  padding-left: 8%;
+}
+
+#login
+{
+  position:fixed;
+  width:100%;
+  height:100%;
+  z-index:2000;
+	color:white;
+}
+
+#login .bg
+{
+  position:absolute;
+  background-color:black;
+  width:100%;
+  height:100%;
+}
+
+#login #inputCon
+{
+  position:absolute;
+  margin-top:20%;
+  text-align:center;
+  width:100%;
+}
+
+#login #inputCon #align
+{
+  text-align:left;
+  margin:auto;
+  width:350px;
+}
+
+#login #inputCon input
+{
+  width:100%;
+  color:black;
+}
+
+#loginBtn
+{
+  width:100%;
+  background-color:#131822;
+  border:2px solid white;
+  color:white;
+  text-align:center;
+  padding:5px;
+  cursor:pointer;
+}
+
+#loginLogo{
+	width:50%;
+}
+
+#loginBtn:hover
+{
+  background-color:white;
+  border:2px solid white;
+  color:#131822;
+}
+
+#title{
+	margin-top:8em;
+}
+
+.blue{
+	font-size: 20px;
+	color:#508fae;
+}
+
+.center{
+	width:100%;
+	text-align: center;
+}
+
+#header{
+	margin:auto;
+	width:25.8em;
+}
+
+#backstory{
+	width:19.2em;
+}
+
+#what{
+	width:41.0em;
+}
+
+img{
+	width:100%;
+}
+
+p{
+	font-size:16px;
+	color:white;
+	text-align: center;
+	line-height:1.5em;
+}
+
+p span{
+	font-weight: bold;
+	font-size:34px;
+}
+
+#box{
+	margin-bottom:40%;
+	background-color:white;
+	padding:3em;
+}
+
+#boxInner{
+	padding:3em;
+	border: .1em solid #a9a9a9;
+}
+
+#footer{
+	position: fixed;
+	width:100%;
+	bottom:0em;
+	left:0em;
+}
+
+.margin{
+	margin-top:5em;
+	margin-bottom:5em;
+}
+
+.cloud{
+	position: absolute;
+	z-index: -100;
+}
+
+.robot{
+	position: absolute;
+	z-index: -100;
+}
+
+#cloudL1{
+	top:0em;
+}
+
+#cloudL{
+	top:26.8em;
+}
+
+#cloudR{
+	top:8em;
+}
+
+#robotR1{
+	right:0em;
+}
+
+#robotL1{
+	left:0em;
+}
+
+#robotR2{
+	right:0em;
+}
+
+#robotL2{
+	left:0em;
+	top:131.8em;
+}
+
+#result{
+	width:22.8em;
+}
+
+@media (max-width: 1024px) {
+	.cloud{
+		width:40%;
+	}
+}
+
+@media (max-width: 960px) {
+
+}
+
+@media (max-width: 640px) {
+	.cloud{
+		width:50%;
+	}
+
+	#what{
+		width:100%;
+	}
+
+	.robot{
+		width:40%;
+	}
+}

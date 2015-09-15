@@ -1,0 +1,765 @@
+body
+{
+  font-size:15px;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+  text-shadow:0 !important;
+  background-color:black;
+  height:100%;
+  margin:0;
+  padding:0px;
+}
+
+body::-webkit-scrollbar
+{
+  width: 0 !important
+}
+
+.container
+{
+  padding-right: 20px !important;
+  padding-left: 20px !important;
+}
+
+#romanList
+{
+  -webkit-padding-start: 25px;
+}
+
+li
+{
+  margin-bottom:10px;
+}
+
+#patchGallery::-webkit-scrollbar,
+#editPatchGallery::-webkit-scrollbar
+{
+    display: none;
+}
+
+.row
+{
+  margin-right:0px;
+  margin-left:0px;
+}
+
+h1
+{
+  font-size:25px;
+  font-weight:bold;
+  margin-top:25px;
+  color:white;
+}
+
+.marginLeft
+{
+  margin-left:-10px !important;
+}
+
+.page
+{
+  height:100%;
+  width:100%;
+}
+
+#indexBg
+{
+  width:100%;
+}
+
+#indexBg > img
+{
+  width:100%;
+}
+
+#indexTitle
+{
+  margin-top:-100px;
+  width:80%;
+  max-width:600px;
+}
+
+#indexTitle > img
+{
+  width:95%;
+}
+
+.white
+{
+  color:white;
+}
+
+.button
+{
+  font-size:18px;
+  padding-top:2px;
+  padding-bottom:2px;
+  width:80%;
+  max-width:960px;
+  border:none;
+  letter-spacing:3px;
+}
+
+button:active
+{
+  outline: none;
+  border: none;
+}
+
+.button.small
+{
+  width:120px;
+  margin-left:10px;
+  margin-right:10px;
+  padding-top:5px;
+  padding-bottom:5px;
+
+}
+
+#indexPage
+{
+  background-color:black;
+}
+
+#indexText
+{
+  line-height: 24px;
+}
+
+.yellowBtn
+{
+  background-color:#ffca29;
+  color:#555555;
+}
+
+.greyBtn
+{
+  background-color:#e6e6e6;
+  color:#2f2f2f;
+}
+
+.blackBtn, .blackBtn:active
+{
+  background-color:black;
+  color:#ffca29;
+  border:2px solid #ffca29;
+}
+
+#toCreateBtn, #lastCreateBtn
+{
+  color:#ffca29;
+  border:2px solid #ffca29;
+  background-color:black;
+  width:100%;
+}
+
+#share_toCreateBtn
+{
+  color:#ffca29;
+  border:2px solid #ffca29;
+  background-color:black;
+  width:80%;
+}
+
+#lastCreateBtn
+{
+  display:none;
+  margin-top:20px;
+}
+
+#toCreateBtn:after, #templateBtn:after, #toUploadBtn:after,
+#checkPrizeBtn:after,
+#redeemPartiBtn:after, .fileUpload:after, #engraveBtn:after,
+#editComplete_engraveBtn:after, #editComplete_tutorBtn:after, #createNewPatchBtn:after,
+#lastCreateBtn:after, #backToECBtn:after, #how_oohBtn:after, #share_toCreateBtn:after
+{
+  margin-left:40px;
+  content:">";
+  position:absolute;
+}
+
+#bigSizeBtn:after
+{
+  margin-left:25px;
+  content:">";
+  position:absolute;
+}
+
+#toluckydrawBtn:after
+{
+  margin-left:15px;
+  content:">";
+  position:absolute;
+}
+
+#partiPrizeBtn:after
+{
+  margin-left:52px;
+  content:">";
+  position:absolute;
+}
+
+.backBtn:after, .hideTc:after, #hideShopInfo:after, #backToECBtn:after
+{
+  margin-left:-70px;
+  content:"<";
+  position:absolute;
+}
+
+#showAllPatchBtn
+{
+  margin-top:20px;
+}
+
+#showAllPatchBtn:after
+{
+  margin-left:20px;
+  content:">";
+  position:absolute;
+}
+
+.hideTc
+{
+  margin:auto;
+  width: 90% !important;
+}
+
+.confirmBtn:after
+{
+  margin-left:15px;
+  content:">";
+  position:absolute;
+}
+
+#backToEditCompleteBtn:after
+{
+  margin-left:-130px;
+  content:"<";
+  position:absolute;
+}
+
+.textLink
+{
+  text-decoration:underline;
+  cursor:pointer;
+}
+
+.alignCenter
+{
+  text-align:center;
+}
+
+#stepContainer
+{
+  padding-bottom:30px;
+  display:none;
+}
+
+#bg
+{
+  background-color:black;
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+
+#templatePage, #editComplete, #checkPrize,
+#partiPrizePage, #redeemDrawPage, #luckyPage,
+#drawRedeemed, #form, #staffPage, #congratPage,
+#editPhoto, #previewPage, #showAllPatch, #confirmDelete, #engravePatch, #showAllPatch, #engraveBtnGrey,
+#customer_thankyou, #customer_form, #thankyou_customer, #editPatch,
+#editComplete_tutor, #androidCoupon
+{
+  display:none;
+}
+
+#patchGallery, #editPatchGallery
+{
+  width:95%;
+  margin:auto;
+  margin-top:10px;
+  height:300px;
+  overflow-y:auto;
+}
+
+#patchGallery > .patchContainer
+{
+  width:100%;
+  position:relative;
+  margin-bottom:10px;
+}
+
+#editPatchGallery > .editPatchContainer
+{
+  width:100%;
+  position:relative;
+  padding:10px;
+}
+
+#patchGallery > .patchContainer img, #editPatchGallery > .editPatchContainer img
+{
+  width:100%;
+}
+
+.deletePatchBtn
+{
+  position:absolute;
+  z-index: 100;
+  right:0px;
+  top:0px;
+  width:25px;
+  height:25px;
+  background-image:url("../images/deleteBtn.png");
+  background-size:cover;
+  background-repeat:no-repeat;
+  border:none !important;
+}
+
+
+#shopInfoContainer, #redeemInfoContainer, #partiRedeemInfoContainer
+{
+  display:none;
+  color:white;
+  background-color:black;
+  position:fixed;
+  z-index:100;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:100%;
+  overflow:auto;
+}
+
+.white
+{
+  color:white;
+}
+
+
+a:hover
+{
+  text-decoration:none;
+}
+
+.warningImg
+{
+  width:100%;
+}
+
+.warningImg img
+{
+  width:30px;
+}
+
+.staffText
+{
+  font-weight:bold;
+  color:black;
+}
+
+#prizeContainer
+{
+  width:100%;
+  text-align:center;
+}
+
+.prizeInfo
+{
+  width:80%;
+  margin:auto;
+  border-top:2px solid #bababa;
+  border-bottom:2px solid #bababa;
+}
+
+#partiPrizeName
+{
+  border-top:2px solid #e1e1e1;
+  width:80%;
+  margin:auto;
+  margin-top:20px;
+}
+
+#partiPrizeNum
+{
+  border-bottom:2px solid #e1e1e1;
+  width:80%;
+  margin:auto;
+}
+
+.fileUpload
+{
+  position: relative;
+  background-color:#ffca29;
+  overflow: hidden;
+  color:#555555 ;
+  text-align:center;
+  width:80%;
+  margin:auto;
+  cursor:pointer;
+  /*display:none;*/
+}
+
+.fileUpload input.upload {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+#editPhoto, #previewPage, #confirmDelete
+{
+  position:fixed;
+  overflow-y:auto;
+  top:0px;
+  color:white;
+  left:0px;
+  background-color:black;
+  height:100%;
+  width:100%;
+}
+
+#templateUploader, #photoForm
+{
+  display:none;
+}
+
+.editControl
+{
+  margin-top:10px;
+  width:100%;
+}
+
+.editControl > .editBtn
+{
+  cursor:pointer;
+  display:inline-block;
+  margin-right: 15px;
+  width:35px;
+}
+
+.editBtn img
+{
+  width:100%;
+}
+
+#previewPng
+{
+  width:940px;
+  height:590px;
+}
+
+#deletePreview
+{
+  width:80%;
+}
+
+#sharePage
+{
+  background-image:url("../images/shareBg.jpg");
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+
+#sharedImgContainer
+{
+  margin-top:20px;
+  width:100%;
+}
+
+#sharedImgContainer img
+{
+  width:100%;
+}
+
+#userInfoForm input[type=text],
+#userInfoForm input[type=email],
+#customer_userInfoForm input[type=text],
+#customer_userInfoForm input[type=email]
+{
+  margin-bottom:10px;
+}
+
+#userInfoForm input[type=text]:focus,
+#userInfoForm textarea:focus,
+#customer_userInfoForm input[type=text]:focus,
+#customer_userInfoForm input[type=text]:focus
+{
+  outline: none !important;
+}
+
+#userInfoForm > select,
+#customer_userInfoForm > select
+{
+  border: 0 !important;  /*Removes border*/
+  -webkit-appearance: none;  /*Removes default chrome and safari style*/
+  -moz-appearance: none; /* Removes Default Firefox style*/
+  padding:10px;
+  margin-top:10px;
+  margin-bottom:10px;
+  color:#666666;
+  background-color:#cbcbcb;
+  border:none;
+  border-style:none;
+  width: 90% ;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+}
+
+.formInput
+{
+  background: white;
+  background-color: #cbcbcb ;
+  color: #666666 ;
+  padding:10px ;
+  width: 90% ;
+  border:none;
+  border-style: none;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:#666666;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:#666666;
+    opacity:1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:#666666;
+    opacity:1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:#666666;
+}
+
+.twoBtnRow
+{
+  margin-top:5px;
+  margin-bottom:50px;
+}
+
+.letterSpace
+{
+  letter-spacing:3px;
+}
+
+#androidImg
+{
+  display:none;
+}
+
+#purchaseCodeContainer
+{
+  color:white;
+  margin-bottom:20px;
+  cursor:pointer;
+}
+
+#customerIndex
+{
+  display:none;
+}
+
+#nonCustomerIndex
+{
+  display:none;
+}
+
+#editComplete_engraveBtn, #editComplete_engraveBtn,
+#checkPrizeBtn
+{
+  display:none;
+}
+
+#how_oohBtn
+{
+  margin-top:20px;
+  display:none;
+}
+
+#createNewPatchBtn
+{
+  margin-bottom:20px;
+}
+
+#couponLink
+{
+  width:100%;
+  color:black;
+  margin-top:10px;
+  margin-bottom:20px;
+}
+
+#resultCanvas2
+{
+  display:none;
+}
+
+/* copy update */
+#editComplete_nonCust, #editComplete_cust
+{
+  display:none;
+}
+
+#thankyou_customer_shopAddress, #usedPurchaseCode
+{
+  display:none;
+}
+
+#tcPadding
+{
+  padding-right: 5px;
+  padding-left:5px;
+}
+
+#editCompleteText
+{
+  text-align:left;
+}
+
+#editComplete_nonCust > .alignLeft, #editComplete_cust > .alignLeft, #partiPrizePage > .alignLeft
+{
+  padding-left:20px;
+  padding-right:20px;
+  text-align:left;
+}
+
+#drawRedeemed > .row > .alignLeft
+{
+  padding-left:20px;
+  padding-right:20px;
+  text-align:left !important;
+}
+
+#partiPrizePage_alignLeft
+{
+  padding-left:20px !important;
+  padding-right:20px !important;
+  text-align:left !important;
+}
+
+
+#preview_engravePatch
+{
+  width: 100%;
+}
+
+.greyOver
+{
+  position:absolute;
+  width:100%;
+}
+
+.patchContainer .greyOver
+{
+  position:absolute;
+  width:100%;
+}
+
+.editPatchContainer > .greyOver
+{
+  padding-right: 20px;
+}
+
+#bkOverImg
+{
+  width:80%;
+}
+
+#engraveBtnGrey
+{
+  color:#9d9d9d !important;
+}
+
+#engravePatchContainer
+{
+  position:relative;
+}
+
+#engravePatchContainer #engravePatchOverlay
+{
+  padding-right:30px;
+}
+
+#engravePatchOverlay img
+{
+  width:100%;
+}
+
+#toShowAllBtn
+{
+  display:none;
+}
+
+#toShowAllBtn:after, #toEditCompleteBtn:after
+{
+  margin-left:-90px;
+  content:"<";
+  position:absolute;
+}
+
+#sharedImgContainer > .greyOver
+{
+  padding-right:40px;
+}
+
+#toluckydrawBtn,#bigSizeBtn,#toEditCompleteBtn
+{
+  width:90%;
+}
+
+.alignLeft
+{
+  text-align:left;
+}
+
+/* new */
+
+#canvasContainer{
+  -webkit-mask-image: url('../images/mask2.png');
+  -webkit-mask-position: center;
+  -webkit-mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+}
+
+#hairOver{
+  position:absolute;
+  width:100%;
+  left:0px;
+}
+
+#finalCanvas,#previewPng
+{
+  display:none;
+}
+
+#finalPng{
+  position:absolute;
+  width:100%;
+  z-index:100;
+  margin:center;
+  top:10%;
+  left:0%;
+}
+
+#bodyTrans{
+  position:absolute;
+  width:100%;
+  z-index:10;
+  left:0px;
+  top:13%;
+}
+
+#preloadImg{
+  position:absolute;
+  z-index:1;
+}
+
+#preloadImg img{
+  width:10px;
+}

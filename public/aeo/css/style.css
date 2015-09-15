@@ -1,0 +1,351 @@
+@font-face {
+    font-family: 'Tienne';
+    src: url(../fonts/Tienne-Heavy.ttf);
+}
+
+body{
+	font-size: 10px;
+	font-family: Arial, sans-serif;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+	background-image:url("../images/bg.jpg");
+	background-repeat: repeat;
+  overflow-x: hidden!important;
+}
+
+.container{
+	padding-right: 8%;
+  padding-left: 8%;
+}
+
+.title{
+	font-family: 'Tienne';
+	font-weight: bold;
+	font-size: 30px;
+	color:black;
+	letter-spacing: -2px;
+}
+
+
+
+#login
+{
+  position:fixed;
+  width:100%;
+  height:100%;
+  z-index:2000;
+	color:white;
+}
+
+#login .bg
+{
+  position:absolute;
+  background-color:black;
+  width:100%;
+  height:100%;
+}
+
+#login #inputCon
+{
+  position:absolute;
+  margin-top:20%;
+  text-align:center;
+  width:100%;
+}
+
+#login #inputCon #align
+{
+  text-align:left;
+  margin:auto;
+  width:350px;
+}
+
+#login #inputCon input
+{
+  width:100%;
+  color:black;
+}
+
+#loginBtn
+{
+  width:100%;
+  background-color:#131822;
+  border:2px solid white;
+  color:white;
+  text-align:center;
+  padding:5px;
+  cursor:pointer;
+}
+
+#loginLogo{
+	width:150px;
+}
+
+#loginBtn:hover
+{
+  background-color:white;
+  border:2px solid white;
+  color:#131822;
+}
+
+.white,
+.white p{
+	color:white;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.largeNum{
+	font-size: 30px;
+}
+
+.num{
+	display:none;
+}
+
+#num1{
+	display: inline-block;
+}
+
+.center{
+	text-align: center;
+}
+
+#top{
+	position:relative;
+	width:100%;
+	top:0em;
+	left:0em;
+}
+
+#meatBg{
+	position: absolute;
+	z-index:-10;
+	top:0em;
+	left:0em;
+	width:100%;
+	height:92%;
+	background-image: url("../images/meatBg.jpg");
+	background-repeat: repeat;
+}
+
+#challenge{
+	position:absolute;
+	width:60%;
+	top:44%;
+	padding-left:3em;
+	padding-top:3em;
+	padding-bottom:1em;
+	border-left: 1em solid black;
+	margin-left: 8%;
+  margin-right: 10%;
+}
+
+#cImg{
+	width:100%;
+}
+
+#bottom{
+	margin-top: -5%;
+}
+
+#bottomImg{
+	position: absolute;
+	z-index:-10;
+}
+
+#video{
+	position:relative;
+	margin:auto;
+	margin-top:-7%;
+}
+
+.section{
+	padding-top:5%;
+	padding-bottom:5%;
+}
+
+#wave{
+  position:absolute;
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
+	width:60%;
+	margin-top:13%;
+}
+
+.relative{
+	position:relative;
+	width:100%;
+}
+
+
+#arR{
+	position: absolute;
+	right:1em;
+	width:4%;
+	margin-top:16%;
+}
+
+#arL{
+	position: absolute;
+	left:1em;
+	width:4%;
+	margin-top:16%;
+	display: none;
+}
+
+.fc-left{
+	display: none;
+}
+
+#arL span img{
+	transform: rotate(180deg);
+}
+
+p{
+	font-size:16px;
+	font-weight:bold;
+	color:black;
+	line-height: 1.5em;
+}
+
+img{
+	width:100%;
+}
+
+#intaCon{
+	width:100%;
+	background-image: url('../images/jeansBg.jpg');
+	background-size:cover;
+	background-repeat: repeat;
+	text-align: center;
+}
+
+#intaCon > div{
+	width:80%;
+	margin:auto;
+}
+
+#intaCon > div > .row > *{
+	margin-bottom:1.5em;
+}
+
+#result{
+	background-color: white;
+	width:100%;
+}
+
+.mar80{
+	width:80%;
+	text-align: center;
+	margin: auto;
+}
+
+#footer{
+	position: relative;
+	padding-top:5%;
+	padding-bottom:5%;
+	text-align: center;
+}
+
+#aeoLogo{
+	width:15.4em;
+	margin:auto;
+}
+
+#truck{
+	position: absolute;
+  width:40%;
+	right:-100em;
+	bottom:4em;
+	-webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+#truck.flyIn{
+	right:0em;
+}
+
+
+@media (max-width: 414px) {
+
+	.title{
+		font-size: 23px;
+	}
+
+	p{
+		font-weight: normal;
+	}
+
+	#challenge{
+    padding-left: 1em;
+    padding-top: 1em;
+		border-left: .5em solid black;
+	}
+
+	#bottom {
+    margin-top: 47%;
+	}
+
+	#truck{
+		display:none;
+	}
+}
+
+@media (max-width: 375px) {
+	.title{
+		font-size: 23px;
+	}
+
+	p{
+		font-weight: normal;
+	}
+
+	#challenge{
+    padding-left: 1em;
+    padding-top: 1em;
+		border-left: .5em solid black;
+	}
+
+	#bottom {
+    margin-top: 65%;
+	}
+
+	#truck{
+		display:none;
+	}
+}
+
+@media (max-width: 320px) {
+
+	.title{
+		font-size: 23px;
+	}
+
+	p{
+		font-weight: normal;
+	}
+
+	#challenge{
+    padding-left: 1em;
+    padding-top: 1em;
+		border-left: .5em solid black;
+	}
+
+	#bottom {
+    margin-top: 84%;
+	}
+
+	#truck{
+		display:none;
+	}
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>test</title>
+  </head>
+  <body>
+<!-- <iframe frameborder="0" width="640" height="498" src="http://v.qq.com/iframe/player.html?vid=t0158rc3zwo&tiny=0&auto=0" allowfullscreen></iframe> -->
+
+    <video id="myvideo" width="420">
+        <source src="http://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4"></source>
+        <source src="http://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg"></source>
+        Your browser does not support HTML5 video.</video>
+    <div>
+        <p>
+            <button id="playme">Play/Pause Video</button>
+        </p>
+        <p>
+            <button id="jump">Jump to 7</button>
+        </p>
+        <p>
+          <button onclick="goFullscreen('myvideo'); return false">
+  View Fullscreen!
+</button>
+        </p>
+    </div>
+  </body>
+  <script type="text/javascript">
+    var myvideo = document.getElementById('myvideo'),
+    playbutton = document.getElementById('playme'),
+    jumplink = document.getElementById('jump');
+
+    jumplink.addEventListener("click", function (event) {
+        event.preventDefault();
+        myvideo.play();
+        myvideo.pause();
+        myvideo.currentTime = 6;
+        myvideo.play();
+    }, false);
+
+    // only in to demonstrate video
+    playbutton.addEventListener("click", function () {
+        if (myvideo.paused) {
+            myvideo.play();
+        } else {
+            myvideo.pause();
+        }
+    }, false);
+
+    function goFullscreen(id) {
+      var element = document.getElementById(id);
+      if (element.mozRequestFullScreen) {
+        element.mozRequestFullScreen();
+      } else if (element.webkitRequestFullScreen) {
+        element.webkitRequestFullScreen();
+      }
+    }
+  </script>
+
+</html>

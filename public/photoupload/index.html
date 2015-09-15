@@ -1,0 +1,109 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+      <meta charset="utf-8">
+      <title>Photo</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="user-scalable=no">
+      <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+      <meta name="format-detection" content="telephone=no">
+      <link rel="stylesheet" href="styles/main.css">
+      <link rel="stylesheet" href="styles/preloader.css">
+  </head>
+  <body id="bg">
+    <!--[if lt IE 10]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div id="preloaderContainer">
+      <div id="uploadingText">
+        Loading
+      </div><br><br>
+      <div id="progressbar"><div id="progress" ><div id="pbaranim"></div></div></div>
+    </div>
+    <!-- <div id="preloadImg"></div> -->
+
+    <div id="createPatch" class="page alignCenter">
+      <h1>Photo Uploader</h1>
+      <br/>
+      <div class="row">
+        <div class="text container alignLeft">
+        </div>
+      </div>
+      <br/>
+      <br/>
+      <div class="row">
+        <div class="text-center">
+          <div class="fileUpload btnFontSize button">
+            <span>Camera</span>
+            <input id="fileUpload" type="file" class="upload" accept="image/*" capture="camera">
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div id="editPhoto" class="page alignCenter">
+        <h1>Edit</h1>
+        <br/>
+        <div class="row">
+          <img id="hairOver" src="images/hair.png" alt="" />
+          <canvas id="resultCanvas2"></canvas>
+          <div id="canvasContainer"></div>
+        </div>
+        <div class="editControl">
+          <div id="rotate" class="editBtn" onClick="canvasRotate()">
+            <img src="images/rotateBtn.png" alt="" />
+          </div>
+          <div id="zoomInBtn" class="editBtn">
+            <img src="images/zoomInBtn.png" alt="" onClick="zoomImage()"/>
+          </div>
+          <div id="zoomOutBtn" class="editBtn">
+            <img src="images/zoomOutBtn.png" alt="" onClick="zoomOutImage()"/>
+          </div>
+        </div>
+        <br/>
+        <div class="row">
+          <div class="twoBtnRow">
+            <button id="backBtn=" name="redeem" class="backBtn button small blackBtn" onClick="changePage(createPatch)">返回</button>
+            <button id="submitTemplateBtn" class="confirmBtn button small blackBtn" onClick="toPreviewPage()">繼續</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="previewPage" class="page alignCenter">
+        <h1>Output</h1>
+        <br/>
+        <div class="row">
+          <img id="previewPng" src="" alt="" />
+          <canvas id="finalCanvas"></canvas>
+          <img id="finalPng" class="" src="" alt="" />
+          <img id="bodyTrans" class="" src="images/b.jpg" alt="" />
+          <form id="photoForm" name="photoForm">
+            <input id="canvasData" type="hidden" name="photo" value="">
+            <input id="submitPhotoBtn" type = "Submit" Name = "Submit" VALUE = "Submit"/>
+          </form>
+          <div id="tapCount">
+
+          </div>
+        </div>
+      </div>
+
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/kinetic.js"></script>
+    <script src="scripts/megapix-image.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/editor.js"></script>
+    <script src="scripts/fastClick.js"></script>
+    <script type="text/javascript">
+      var imageURL = 'images/';
+      var preloadArray =
+      	[
+      		imageURL+ "mask2.png",
+      		imageURL+ 'hair.png',
+          imageURL+ 'a.jpg',
+          imageURL+ 'b.jpg',
+      	];
+      preload('index',preloadArray);
+    </script>
+  </body>
+</html>
